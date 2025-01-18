@@ -11,6 +11,7 @@ import { FormControl, FormsModule, NgForm } from '@angular/forms';
 })
 export class AppComponent {
 
+  @ViewChild('form', {static:true}) signupForm!:NgForm
 
   suggestUserName() {
     const suggestedName = 'Superuser';
@@ -22,7 +23,12 @@ export class AppComponent {
   // }
 
   //Displays the values of the each field we entered
-  onSubmit(form:NgForm){
-      console.log(form);
-    }
+  // onSubmit(form:NgForm){
+  //     console.log(form);
+  //   }
+
+  //using ViewChild
+  onSubmit(){
+        console.log(this.signupForm);
+     }
 }

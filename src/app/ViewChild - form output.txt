@@ -1,0 +1,318 @@
+Output of ViewChild
+
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+
+ @ViewChild('form', {static:true}) signupForm!:NgForm
+
+ //using ViewChild
+  onSubmit(){
+        console.log(this.signupForm);
+     }
+
+This will capture and displays the values which we enterd in the form. All the form control values will be displayed here.
+
+Output:
+
+_NgForm {_rawValidators: Array(0), _rawAsyncValidators: Array(0), _onDestroyCallbacks: Array(0), callSetDisabledState: 'always', _submitted: ƒ, …}
+callSetDisabledState
+:
+"always"
+form
+:
+FormGroup
+controls
+:
+email
+:
+FormControl2
+defaultValue
+:
+null
+errors
+:
+null
+events
+:
+Observable2 {source: Subject2}
+pristineReactive
+:
+() => {…}
+statusChanges
+:
+EventEmitter_ {closed: false, currentObservers: Array(0), observers: Array(0), isStopped: false, hasError: false, …}
+statusReactive
+:
+() => {…}
+touchedReactive
+:
+() => {…}
+value
+:
+"test@gmail.com"
+valueChanges
+:
+EventEmitter_ {closed: false, currentObservers: Array(0), observers: Array(0), isStopped: false, hasError: false, …}
+_composedAsyncValidatorFn
+:
+null
+_composedValidatorFn
+:
+null
+_events
+:
+Subject2 {closed: false, currentObservers: Array(0), observers: Array(0), isStopped: false, hasError: false, …}
+_hasOwnPendingAsyncValidator
+:
+null
+_onChange
+:
+[ƒ]
+_onCollectionChange
+:
+() => { }
+_onDisabledChange
+:
+[ƒ]
+_parent
+:
+FormGroup {_pendingDirty: false, _hasOwnPendingAsyncValidator: null, _pendingTouched: false, _parent: null, _onCollectionChange: ƒ, …}
+_pendingChange
+:
+false
+_pendingDirty
+:
+true
+_pendingTouched
+:
+true
+_pendingValue
+:
+"test@gmail.com"
+_pristine
+:
+() => {…}
+_rawAsyncValidators
+:
+null
+_rawValidators
+:
+null
+_status
+:
+() => {…}
+_touched
+:
+() => {…}
+asyncValidator
+:
+(...)
+dirty
+:
+true
+disabled
+:
+false
+enabled
+:
+true
+invalid
+:
+false
+parent
+:
+FormGroup
+pending
+:
+false
+pristine
+:
+false
+root
+:
+FormGroup
+status
+:
+"VALID"
+touched
+:
+true
+untouched
+:
+false
+updateOn
+:
+"change"
+valid
+:
+true
+validator
+:
+null
+[[Prototype]]
+:
+AbstractControl
+secret
+:
+FormControl2
+defaultValue
+:
+null
+errors
+:
+null
+events
+:
+Observable2 {source: Subject2}
+pristineReactive
+:
+() => {…}
+statusChanges
+:
+EventEmitter_ {closed: false, currentObservers: Array(0), observers: Array(0), isStopped: false, hasError: false, …}
+statusReactive
+:
+() => {…}
+touchedReactive
+:
+() => {…}
+value
+:
+"pet"
+valueChanges
+:
+EventEmitter_ {closed: false, currentObservers: Array(0), observers: Array(0), isStopped: false, hasError: false, …}
+_composedAsyncValidatorFn
+:
+null
+_composedValidatorFn
+:
+null
+_events
+:
+Subject2 {closed: false, currentObservers: Array(0), observers: Array(0), isStopped: false, hasError: false, …}
+_hasOwnPendingAsyncValidator
+:
+null
+_onChange
+:
+[ƒ]
+_onCollectionChange
+:
+() => { }
+_onDisabledChange
+:
+[ƒ]
+_parent
+:
+FormGroup {_pendingDirty: false, _hasOwnPendingAsyncValidator: null, _pendingTouched: false, _parent: null, _onCollectionChange: ƒ, …}
+_pendingChange
+:
+false
+_pendingDirty
+:
+true
+_pendingTouched
+:
+true
+_pendingValue
+:
+"pet"
+_pristine
+:
+() => {…}
+_rawAsyncValidators
+:
+null
+_rawValidators
+:
+null
+_status
+:
+() => {…}
+_touched
+:
+() => {…}
+asyncValidator
+:
+(...)
+dirty
+:
+true
+disabled
+:
+false
+enabled
+:
+true
+invalid
+:
+false
+parent
+:
+FormGroup
+pending
+:
+false
+pristine
+:
+false
+root
+:
+FormGroup
+status
+:
+"VALID"
+touched
+:
+true
+untouched
+:
+false
+updateOn
+:
+"change"
+valid
+:
+true
+validator
+:
+null
+[[Prototype]]
+:
+AbstractControl
+username
+:
+FormControl2 {_pendingDirty: true, _hasOwnPendingAsyncValidator: null, _pendingTouched: true, _parent: FormGroup, _onCollectionChange: ƒ, …}
+[[Prototype]]
+:
+Object
+errors
+:
+null
+events
+:
+Observable2 {source: Subject2}
+pristineReactive
+:
+() => {…}
+statusChanges
+:
+EventEmitter_ {closed: false, currentObservers: Array(0), observers: Array(0), isStopped: false, hasError: false, …}
+statusReactive
+:
+() => {…}
+touchedReactive
+:
+() => {…}
+value
+:
+email
+:
+"test@gmail.com"
+secret
+:
+"pet"
+username
+:
+"test"
+
