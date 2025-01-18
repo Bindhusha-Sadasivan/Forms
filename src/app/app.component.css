@@ -1,3 +1,19 @@
 .container {
   margin-top: 30px;
 }
+
+/* Entire form and FC will be displayed in red color on initial load itself */
+/* .ng-invalid{
+  border: 1px solid red;
+} */
+
+/* Entire FC will be displayed in red color on initial load itself */
+/* input.ng-invalid{
+  border: 1px solid red;
+} */
+
+/* Only displays red boder, if we touch and leave the FC */
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+
