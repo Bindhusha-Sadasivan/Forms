@@ -1,0 +1,43 @@
+The output of this part - HTMLFormElement
+<!-- Displays the complete form -->
+<!-- <form (ngSubmit)="onSubmit(form)" #form> -->
+
+// Displays the complete form
+// onSubmit(form:HTMLFormElement){
+//   console.log(form);
+// }
+
+
+It will not accept any input even if we type or select anything in the input field.
+It just displays the template.
+
+
+Output:
+
+<form _ngcontent-ng-c1774939718="" novalidate="" class="ng-valid ng-submitted ng-dirty ng-touched">
+<div _ngcontent-ng-c1774939718="" id="user-data">
+<div _ngcontent-ng-c1774939718="" class="form-group">
+<label _ngcontent-ng-c1774939718="" for="username" class="mb-1">Username</label>
+<input _ngcontent-ng-c1774939718="" type="text" id="username" ngmodel="" name="username" class="form-control ng-valid ng-dirty ng-touched" ng-reflect-model="" ng-reflect-name="username">
+</div>
+<button _ngcontent-ng-c1774939718="" type="button" class="btn btn-default mt-1">
+Suggest an Username
+</button>
+<div _ngcontent-ng-c1774939718="" class="form-group">
+<label _ngcontent-ng-c1774939718="" for="email" class="mb-1">Mail</label><input _ngcontent-ng-c1774939718="" type="email" id="email" ngmodel="" name="email" class="form-control mb-1 ng-untouched ng-pristine ng-valid" ng-reflect-model="" ng-reflect-name="email">
+</div>
+</div><
+div _ngcontent-ng-c1774939718="" class="form-group">
+<label _ngcontent-ng-c1774939718="" for="secret" class="mb-1">
+Secret Questions
+</label>
+<select _ngcontent-ng-c1774939718="" id="secret" ngmodel="" name="secret" class="form-control ng-untouched ng-pristine ng-valid" ng-reflect-model="" ng-reflect-name="secret">
+<option _ngcontent-ng-c1774939718="" value="pet" ng-reflect-value="pet">Your first Pet?</option>
+<option _ngcontent-ng-c1774939718="" value="teacher" ng-reflect-value="teacher">Your first teacher?</option>
+</select></>
+<button _ngcontent-ng-c1774939718="" type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
+
+
+It will not accept any input even if we type or select anything in the input field.
+It just displays the template.
