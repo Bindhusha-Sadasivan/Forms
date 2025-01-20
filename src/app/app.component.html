@@ -24,6 +24,8 @@
             <option value="teacher">Your first teacher?</option>
           </select>
         </div>
+        <div class="form-group"><textarea class="form-control mt-2" name="detailedText" id="detailedTextId" [(ngModel)]="questionAnswer"></textarea></div>
+        <p class="mt-2">Your Reply : {{questionAnswer}}</p>
         <!-- Disable the form untill all the fields are valid -->
         <button class="btn btn-primary mt-3" type="submit" [disabled]="!form.valid">Submit</button>
       </form>
