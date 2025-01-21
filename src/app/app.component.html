@@ -27,6 +27,36 @@
         </div>
         <div class="form-group"><textarea class="form-control mt-2" name="detailedText" id="detailedTextId" [(ngModel)]="questionAnswer"></textarea></div>
         <p class="mt-2">Your Reply : {{questionAnswer}}</p>
+        <!-- <div class="radio mt-2" *ngFor="let gender of genders">
+          <label for="selectRadio">
+            <input id="selectRadio" name="gender" ngModel [value]="gender" required>
+            {{gender}}
+          </label>
+        </div> -->
+        <!-- To select any one of them -->
+        <div class="form-check" *ngFor="let gender of genders">
+          <input class="form-check-input" id="flexRadioDefault1" type="radio" name="gender" ngModel [value]="gender" required>
+          <label class="form-check-label" for="flexRadioDefault1">
+            {{gender}}
+          </label>
+        </div>
+        <!-- To display any one of the value is selected on initial load - Property binding on ngModel [ngModel]="defaultSelect"-->
+        <div class="form-check" *ngFor="let gender of genders">
+          <input class="form-check-input" id="flexRadioDefault1" type="radio" name="gender" [ngModel]="defaultSelect" [value]="gender" required>
+          <label class="form-check-label" for="flexRadioDefault1">
+            {{gender}}
+          </label>
+        </div>
+        <!-- To display the output on selection of any one of them below - Two way binding on ngModel [(ngModel)]="displaySelect"-->
+        <div class="form-check" *ngFor="let gender of genders">
+          <input class="form-check-input" id="flexRadioDefault1" type="radio" name="gender" [(ngModel)]="displaySelect" [value]="gender" required>
+          <label class="form-check-label" for="flexRadioDefault1">
+            {{gender}}
+          </label>
+        </div>
+
+        <p class="mt-2">Your Selection : {{displaySelect}}</p>
+
         <!-- Disable the form untill all the fields are valid -->
         <button class="btn btn-primary mt-3" type="submit" [disabled]="!form.valid">Submit</button>
       </form>

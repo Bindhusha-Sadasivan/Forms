@@ -15,6 +15,9 @@ export class AppComponent {
 
   defaultQuestion:string='pet';
   questionAnswer:string='';
+  genders:Array<any>=['male','female'];
+  defaultSelect:any='male';
+  displaySelect:string='';
 
   suggestUserName() {
     const suggestedName = 'Superuser';
