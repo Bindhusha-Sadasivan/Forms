@@ -21,6 +21,15 @@ export class AppComponent {
 
   suggestUserName() {
     const suggestedName = 'Superuser';
+    this.signupForm.setValue({
+      'userData':{
+              'username' : suggestedName,
+              'email' : 'max@max.com'
+          },
+          'secret' : 'teacher',
+          'detailedText' : 'My teacher is a good teacher',
+          'gender' : 'female',
+    });
   }
 
   // Displays the complete form
@@ -36,5 +45,16 @@ export class AppComponent {
   //using ViewChild
   onSubmit(){
         console.log(this.signupForm);
+
+        // this.signupForm.setValue({
+        //   'userData':{
+        //       'username' : 'Max',
+        //       'email' : 'max@max.com'
+        //   },
+        //   'secret' : 'teacher',
+        //   'detailedText' : 'My teacher is a good teacher',
+        //   'gender' : 'female',
+
+        // });
      }
 }

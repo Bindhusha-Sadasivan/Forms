@@ -10,7 +10,7 @@
             <label for="username" class="mb-1">Username</label>
             <input type="text" id="username" class="form-control" ngModel name="username" required>
           </div>
-          <button class="btn btn-default mt-1" type="button">Suggest an Username</button>
+          <button class="btn btn-default mt-1" type="button" (click)="suggestUserName()">Suggest an Username</button>
           <div class="form-group">
             <label for="email" class="mb-1">Mail</label>
             <input type="email" id="email" class="form-control mb-1" ngModel name="email" required email #email="ngModel">
@@ -34,19 +34,19 @@
           </label>
         </div> -->
         <!-- To select any one of them -->
-        <div class="form-check" *ngFor="let gender of genders">
+        <!-- <div class="form-check" *ngFor="let gender of genders">
           <input class="form-check-input" id="flexRadioDefault1" type="radio" name="gender" ngModel [value]="gender" required>
           <label class="form-check-label" for="flexRadioDefault1">
             {{gender}}
           </label>
-        </div>
+        </div> -->
         <!-- To display any one of the value is selected on initial load - Property binding on ngModel [ngModel]="defaultSelect"-->
-        <div class="form-check" *ngFor="let gender of genders">
+        <!-- <div class="form-check" *ngFor="let gender of genders">
           <input class="form-check-input" id="flexRadioDefault1" type="radio" name="gender" [ngModel]="defaultSelect" [value]="gender" required>
           <label class="form-check-label" for="flexRadioDefault1">
             {{gender}}
           </label>
-        </div>
+        </div> -->
         <!-- To display the output on selection of any one of them below - Two way binding on ngModel [(ngModel)]="displaySelect"-->
         <div class="form-check" *ngFor="let gender of genders">
           <input class="form-check-input" id="flexRadioDefault1" type="radio" name="gender" [(ngModel)]="displaySelect" [value]="gender" required>
