@@ -21,15 +21,21 @@ export class AppComponent {
 
   suggestUserName() {
     const suggestedName = 'Superuser';
-    this.signupForm.setValue({
-      'userData':{
-              'username' : suggestedName,
-              'email' : 'max@max.com'
-          },
-          'secret' : 'teacher',
-          'detailedText' : 'My teacher is a good teacher',
-          'gender' : 'female',
-    });
+
+    //setValue
+    // this.signupForm.setValue({
+    //   'userData':{
+    //           'username' : suggestedName,
+    //           'email' : 'max@max.com'
+    //       },
+    //       'secret' : 'teacher',
+    //       'detailedText' : 'My teacher is a good teacher',
+    //       'gender' : 'female',
+    // });
+    //patchValue
+    this.signupForm.form.patchValue({
+        'userData':{
+                'username' : suggestedName}});
   }
 
   // Displays the complete form
