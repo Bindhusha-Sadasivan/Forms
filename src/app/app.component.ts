@@ -18,6 +18,15 @@ export class AppComponent {
   genders:Array<any>=['male','female'];
   defaultSelect:any='male';
   displaySelect:string='';
+  user:any = {
+    username:'',
+    email:'',
+    secretQuestion:'',
+    answer:'',
+    gender:''
+  };
+  submitted:boolean=false;
+
 
   suggestUserName() {
     const suggestedName = 'Superuser';
@@ -62,5 +71,12 @@ export class AppComponent {
         //   'gender' : 'female',
 
         // });
+
+      this.submitted = true;
+      this.user.username = this.signupForm.value.userData.username;
+      this.user.email = this.signupForm.value.userData.email;
+      this.user.secretQuestion = this.signupForm.value.secret;
+      this.user.answer = this.signupForm.value.detailedText;
+      this.user.gender = this.signupForm.value.gender;
      }
 }
